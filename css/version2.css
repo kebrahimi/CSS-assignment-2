@@ -2,25 +2,24 @@
 html {
   box-sizing: border-box;
 }
-
 * {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 /* you may add to or change the body rule */
 body {
-    font-family: sans-serif;
-    color: #000000;
-    background: #000;
-    margin: 0;
+  font-family: sans-serif;
+  color: #000000;
+  background: #000;
+  margin: 0;
 }
 
 img {
-    max-width: 100%; /* DO NOT delete or change this line */
-    margin-top: 40px;
+  max-width: 100%; /* DO NOT delete or change this line */
+
 }
 
 h2 {
-  text-align: center;
+  text-align: left;
 }
 
 header {
@@ -48,29 +47,32 @@ nav ul li {
 
 #cougar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-self: flex-start;
   background: #FF9E42;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
 #lion {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background:#FFD5AE;
-  align-items: center;
+  align-self: flex-start;
   color: #333;
+  justify-content: space-evenly;
 }
 
 #tiger {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background:#FFBD82;
-  align-items: center;
+  align-self: flex-start;
+  justify-content: space-evenly;
   color: #333;
 }
 
 section {
-  max-width: 600px;
+  max-width: 700px;
 }
 
 article {
@@ -80,10 +82,9 @@ article {
 
 .text {
   color: #333;
-  background: #fff;
-  padding: 20px 50px;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
+  margin: 20px 40px;
+  margin-bottom: 50px;
+  padding: 0px 40px;
 }
 
 section.text a {
@@ -92,7 +93,9 @@ section.text a {
 
 .photo {
   font-size: 1rem;
-  padding-bottom:10px;
+  margin: 0;
+  margin-right: -40px;
+  padding: 40px;
 }
 
 section.photo a {
